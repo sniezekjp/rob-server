@@ -9,6 +9,7 @@
  * http://sailsjs.org/#/documentation/concepts/ORM
  */
 
+var connection = process.env.USE_MONGO ? 'someMongodbServer' : undefined;
 module.exports.models = {
 
   /***************************************************************************
@@ -17,7 +18,7 @@ module.exports.models = {
   * connections (see `config/connections.js`)                                *
   *                                                                          *
   ***************************************************************************/
-  //connection: 'someMongodbServer',
+  connection: connection,
 
   /***************************************************************************
   *                                                                          *
@@ -27,6 +28,6 @@ module.exports.models = {
   * See http://sailsjs.org/#/documentation/concepts/ORM/model-settings.html  *
   *                                                                          *
   ***************************************************************************/
-  migrate: 'drop'
+  migrate: 'safe'
 
 };

@@ -24,7 +24,7 @@ module.exports = {
         };
         var account = {
           name: item[0].trim()
-        };        
+        };
         Broker.findOne(broker).exec(function(err, theBroker) {
           if(!theBroker) {
             Broker.create(broker).exec(function(err, broker) {
