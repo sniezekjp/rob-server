@@ -36,7 +36,9 @@ module.exports.routes = {
     view: 'homepage'
   },
 
-  'post /account/import': 'AccountController.import'
+  'post /account/import': 'AccountController.import',
+  'post /calllog/import': 'CallLogController.import',
+  'get /account/search' : 'AccountController.search'
 
   /***************************************************************************
   *                                                                          *

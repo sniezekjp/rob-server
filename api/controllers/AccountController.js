@@ -45,6 +45,16 @@ module.exports = {
     async.waterfall(waterfall, function() {
       res.json("Done importing");
     });
+  },
+
+  search: function(req, res) {
+    Account.find({
+      name: {
+        contains: req.query.name
+      }
+    }).exec(function(err, results) {
+      res.json(results);
+    });
   }
 };
 
