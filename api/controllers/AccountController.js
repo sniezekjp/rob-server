@@ -13,6 +13,7 @@ module.exports = {
       res.json(result);
     });
   },
+  
   import: function(req, res) {
     var waterfall = [];
     req.body.data.forEach(function(item) {

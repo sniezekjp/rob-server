@@ -5,6 +5,10 @@
 * @docs        :: http://sailsjs.org/#!documentation/models
 */
 
+// module.exports.blueprints = {
+// 	defaultLimit: 75,
+// }
+
 module.exports = {
 
   migrate: 'safe',

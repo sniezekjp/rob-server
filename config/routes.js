@@ -38,6 +38,7 @@ module.exports.routes = {
 
   'post /account/import': 'AccountController.import',
   'post /calllog/import': 'CallLogController.import',
+  'post /roadshow/import': 'RoadshowController.import',
   'get /account/search' : 'AccountController.search'
 
   /***************************************************************************
